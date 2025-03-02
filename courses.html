@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <!-- Header nav -->
+        <div class="header-nav">
+          
+                       <a href="index.html" class="logo"
+              ><img
+                class="logo-img"
+                src="./img/logo.jpg"
+                alt="логотип сайта"
+                width="100px"
+                height="45px"
+            />Eng_Dream School</a>
+          <nav id="nav" class="nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link current">Home</a>
+              </li>
+              <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+              <li class="nav-item">
+                <a href="courses.html" class="nav-link">Courses</a>
+              </li>
+              <li class="nav-item"><a href="tutors" class="nav-link">Tutors</a></li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link">Contact</a>
+              </li>
+                  <li class="nav-item">
+                <a href="#!" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <button id="nav-btn" class="nav-button">
+              <img
+                id="nav-btn-img"
+                src="./img/icons/nav-open.svg"
+                alt="Nav Button"
+              />
+            </button>
+          </nav>
+        </div>
+
+        <!-- Header content -->
+      </div>
+    </header>
+    <!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курси англійської</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .course-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 100%;
+            padding: 20px;
+            justify-content: space-evenly;
+        }
+        .card {
+            width: 300px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card h3 {
+            font-size: 20px;
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .card p {
+            font-size: 16px;
+            color: #666;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="course-container">
+        <div class="card" onclick="openModal('General English for children', 'Ця програма надає дітям колекцію веселих відео та модулів...')">
+            <img src="/img/course1.jpg" alt="General English for children">
+            <div class="card-content">
+                <h3 class="textcourses">General English for children</h3>
+                <p>Ця програма надає дітям колекцію веселих відео та модулів...</p>
+            </div>
+        </div>
+ <div id="modal" class="modal" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <img src="img/frame.jpg" alt="USA Flag">
+                <h2 id="modal-title"></h2>
+                <span class="close" onclick="closeModal(event)">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Інформація</h3>
+                    <p id="modal-text"></p>
+                </div>
+                <div class="modal-section">
+                    <h3>Додаткові дані</h3>
+                    <p>Тут можна додати більше інформації про курс.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="card" onclick="openModal('General English for adults', 'Для повсякденного життя і використання знань у життєвих ситуаціях...')">
+            <img src="/img/course2.jpg" alt="General English for adults">
+            <div class="card-content">
+                <h3 class="textcourses">General English for adults</h3>
+                <p>Для повсякденного життя і використання знань у життєвих ситуаціях...</p>
+            </div>
+        </div>
+        <div class="card" onclick="openModal('Exam Preparation – CELPIP/IELTS', 'Для студентів, які бажають скласти тест IELTS і вступити до вишу...')">
+            <img src="/img/course3.jpg" alt="Exam Preparation – CELPIP/IELTS">
+            <div class="card-content">
+                <h3 class="textcourses">Exam Preparation – CELPIP/IELTS</h3>
+                <p>Для студентів, які бажають скласти тест IELTS і вступити до вишу...</p>
+            </div>
+        </div>
+        <div class="card" onclick="openModal('Business English', 'Ділова англійська для офіційного спілкування та переговорів...')">
+            <img src="/img/course4.jpg" alt="Business English">
+            <div class="card-content">
+                <h3 class="textcourses">Business English</h3>
+                <p>Ділова англійська для офіційного спілкування та переговорів...</p>
+            </div>
+        </div>
+        <div class="card" onclick="openModal('English for an interview', 'Інтерв\'ю англійською мовою – ваші компетенції та кар\'єрні плани...')">
+            <img src="/img/course5.jpg" alt="English for an interview">
+            <div class="card-content">
+                <h3 class="textcourses">English for an interview</h3>
+                <p>Інтерв'ю англійською мовою – ваші компетенції та кар'єрні плани...</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal" class="modal" onclick="closeModal(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal(event)">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+<!-- ---------------------------FOOTER--------------------- -->
+    <footer>
+    <div class="footer">
+		<div class="inner-footer">
+
+			<div class="footer-items">
+				
+<img class="footer-pic" src="./img/logo.jpg" width="100px" height="130px" > 
+			</div>
+
+			<div class="footer-items">
+				<h2 class="footer-text">Quick Links</h2>
+				<div class="border"></div>
+				<ul class="footer-menu">
+					<a href="index.html"><li class="footer-links">Home</li></a>
+					<a href="about.html"><li class="footer-links">About Us</li></a>
+					<a href="courses.html"><li class="footer-links">Courses</li></a>
+					<a href="tutors.html"><li class="footer-links">Tutors</li></a>
+          	<a href="rentals.html"><li class="footer-links">Rentals</li></a>
+            	<a href="news.html"><li class="footer-links">News Flayers</li></a>
+					<a href="contacts.html"><li class="footer-links">Contact</li></a>
+				</ul>
+			</div>
+
+			<!-- <div class="footer-items">
+				<h2 class="footer-text">Menu</h2>
+				<div class="border"></div>
+				<ul class="footer-menu">
+					<a href="appetizers.html"><li class="footer-links">Appetizers</li></a>
+					<a href="hot.html"><li class="footer-links">Entrees</li></a>
+					<a href="salads.html"><li class="footer-links">Salads and Sides</li></a>
+					<a href="soups.html"><li class="footer-links">Soups</li></a>
+          <a href="baking.html"><li class="footer-links">Desserts</li></a>
+          <a href="cake.html"><li class="footer-links">Cakes</li></a>
+					<a href="trays.html"><li class="footer-links">Trays</li></a>
+				</ul>
+			</div> -->
+
+			<div class="footer-items">
+				<h2 class="footer-text">Contact Us</h2>
+				<div class="border"></div>
+				<ul class="footer-menu">
+					<a href="https://www.bing.com/maps?osid=8944ca7e-01eb-4ad8-8914-23b6f917a971&cp=43.612931~-79.579669&lvl=14&v=2&sV=2&form=S00027"><li><i class="fa fa-map-marker footer-icon" aria-hidden="true"></i>1575 Dundas St E, Mississauga ON</li></a>
+					<a href="tel: 905-625-9617"><li><i class="fa fa-phone footer-icon"  aria-hidden="true"></i>(905) 625-9617</li></a>
+					<a href="mailto:eddiesmeatanddelimarket@gmail.com"><li><i class="fa fa-envelope footer-icon"  aria-hidden="true"></i>eddiesmeatanddelimarket@gmail.com</li></a>
+				</ul>
+				<div class="social-media">
+					<a href="https://www.facebook.com/Eddies-Meat-and-Deli-Market-113778758650751/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://eddiesmarket.ca/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="footer-bottom">
+			Copyright Eddies Store &copy; 2022
+		</div>
+	</div>
+  </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

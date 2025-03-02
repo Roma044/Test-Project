@@ -13,3 +13,19 @@ navBtn.onclick = () => {
 AOS.init();
 // disable: 'mobile'  -- відключити анімацію в телефонів
 //   once: true, -- зробити щоб анімація не повторювалася
+
+/*-------------------------Modal WIndow---------------------*/
+
+function openModal(title, text) {
+  document.getElementById("modal-title").innerText = title;
+  document.getElementById("modal-text").innerText = text;
+  document.getElementById("modal").style.display = "flex";
+}
+function closeModal(event) {
+  if (
+    event.target === document.getElementById("modal") ||
+    event.target.classList.contains("close")
+  ) {
+    document.getElementById("modal").style.display = "none";
+  }
+}
