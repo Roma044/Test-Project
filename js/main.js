@@ -29,3 +29,17 @@ function closeModal(event) {
     document.getElementById("modal").style.display = "none";
   }
 }
+
+/*----------------------------Послуги-------------------------------*/
+function openModal(title) {
+  document.getElementById("modal-title").innerText = title;
+  document.getElementById("modal").style.display = "flex";
+}
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+window.onclick = function (event) {
+  if (event.target === document.getElementById("modal")) {
+    closeModal();
+  }
+};

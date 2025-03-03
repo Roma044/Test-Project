@@ -67,6 +67,7 @@
               <p class="third-text">Eng_Dream_School</p> - це школа, народжена з любові та багатьох маленьких кроків до великої та світлої мрії. Ключовим словом в назві є «dream», тобто «мрія».
 Наша школа побудована таким чином, що ваш викладач- це ваш ваш друг. Такий девіз нашої школи, тому що ми переконані, що це 80% успіху.
             </p>
+             <button class="enroll-button" onclick="alert('Ви записалися на курс!')">ЗАПИСАТИСЬ НА ЗАНЯТТЯ</button>
           </div>
           <div class="headder-img" data-aos="fade-left">
             <picture>
@@ -150,11 +151,52 @@
         </div>
       </div>
     </section>
+<div class="banner-container">
+    <div class="banner">
+        ПОЗНАЙОМТЕСЬ З НАШИМИ ПОСЛУГАМИ БЛИЖЧЕ
+    </div>
+</div>
 
-    <section class="portfolio">
-      <div class="container">
+    <section>
+      <div class="container-help">
+        <div class="title">&#128187; Формат занять</div>
+        <div class="cards-advice">
+            <div class="card" onclick="openModal('ONLINE')">
+                <img src="img/help1.jpg" alt="Online Lessons">
+                <div class="card-content">
+                    <h3>ONLINE</h3>
+                    <div class="tag">КАНАДА</div>
+                    <div class="tag">УКРАЇНА / ЄВРОПА</div>
+                </div>
+            </div>
+            <div class="card" onclick="openModal('OFFLINE')">
+                <img src="img/help2.jpg" alt="Offline Lessons">
+                <div class="card-content">
+                    <h3> OFFLINE</h3>
+                    <div class="tag">КАНАДА</div>
+                </div>
+            </div>
+            <div class="card" onclick="openModal('Speaking Clubs')">
+                <img src="img/help3.jpg" alt="Speaking Clubs">
+                <div class="card-content">
+                    <h3>Speaking Clubs</h3>
+                    <p><strong>РОЗМОВНИЙ КЛУБ</strong> англійської мови – це <span style="color: #d4a017;">місце зустрічі однодумців</span>, людей, які мають спільну мету.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p>Детальна інформація про курс</p>
+        </div>
+    </div>
+
+      <!-- <div class="container">
         <div class="portfolio-title">
-          <h2 class="title-1">Portfolio</h2>
+          <h2 class="title-1">Формати занять</h2>
         </div>
 
         <div class="project" data-aos="flip-up">
@@ -185,7 +227,42 @@
             <a href="#!">Braun Landing Page - Concept</a>
           </h3>
         </div>
-      </div>
+      </div> -->
+    </section>
+    <!--------------------------------Як проходять уроки---------------------->
+
+    <section>
+      <div class="container-advice">
+        <div class="title">&#128187; Процес навчання</div>
+        <div class="cards-advice">
+            <div class="card" onclick="openModal('ONLINE')">
+                <img src="img/advice1.jpg" alt="Online Lessons">
+                <div class="card-content">
+                    <h3> Як проходять уроки</h3>
+                </div>
+            </div>
+            <div class="card" onclick="openModal('OFFLINE')">
+                <img src="img/advice2.jpg" alt="Offline Lessons">
+                <div class="card-content">
+                    <h3>Для чого потрібен пробний урок?</h3>
+                </div>
+            </div>
+            <div class="card" onclick="openModal('Speaking Clubs')">
+                <img src="img/advice3.jpg" alt="Speaking Clubs">
+                <div class="card-content">
+                    <h3>Який варіант оплати обрати?</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p>Детальна інформація про курс</p>
+        </div>
+    </div>
     </section>
 
         <!-- ---------------------------FOOTER--------------------- -->
