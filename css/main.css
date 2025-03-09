@@ -92,6 +92,12 @@ body {
   color: #606060;
 } */
 
+.nav-link.active {
+  color: #ff6600; /* Колір активного посилання */
+  font-weight: bold;
+  border-bottom: 2px solid #ff6600; /* Підкреслення активного посилання */
+}
+
 /* Header content */
 
 .header-row {

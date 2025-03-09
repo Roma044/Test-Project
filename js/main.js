@@ -43,3 +43,18 @@ window.onclick = function (event) {
     closeModal();
   }
 };
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Отримуємо URL поточної сторінки
+  let currentLocation = window.location.pathname.split("/").pop();
+
+  // Отримуємо всі посилання у навігації
+  let navLinks = document.querySelectorAll(".nav-link");
+
+  // Перебираємо всі посилання та додаємо клас 'active' для відповідного
+  navLinks.forEach((link) => {
+    if (link.getAttribute("href") === currentLocation) {
+      link.classList.add("active");
+    }
+  });
+});
