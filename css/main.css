@@ -1,17 +1,8 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-/* body {
-  color: #000;
-  font-size: 14px;
-  font-family: "Poppins", sans-serif;
-} */
-
 body {
-  background-image: url("/img/back2.jpg"); /* Переконайся, що шлях вірний */
-  background-size: cover; /* Заповнює весь екран */
-  background-position: center; /* Центрує зображення */
-  background-repeat: no-repeat; /* Вимикає повторення */
+  color: #000;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
 }
