@@ -8,7 +8,7 @@
 } */
 
 body {
-  background-image: url("/img/back1.jpg"); /* Переконайся, що шлях вірний */
+  background-image: url("/img/back2.jpg"); /* Переконайся, що шлях вірний */
   background-size: cover; /* Заповнює весь екран */
   background-position: center; /* Центрує зображення */
   background-repeat: no-repeat; /* Вимикає повторення */
