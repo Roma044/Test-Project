@@ -58,3 +58,45 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// const reviewTrack = document.querySelector(".review-track");
+// const reviewItems = document.querySelectorAll(".review-item");
+// const prevReview = document.getElementById("prevReview");
+// const nextReview = document.getElementById("nextReview");
+// let reviewIndex = 0;
+// let autoSlide;
+
+// function updateReviewSlider() {
+//   reviewTrack.style.transform = `translateX(-${reviewIndex * 100}%)`;
+// }
+
+// function nextSlide() {
+//   reviewIndex = reviewIndex < reviewItems.length - 1 ? reviewIndex + 1 : 0;
+//   updateReviewSlider();
+// }
+
+// function prevSlide() {
+//   reviewIndex = reviewIndex > 0 ? reviewIndex - 1 : reviewItems.length - 1;
+//   updateReviewSlider();
+// }
+
+// prevReview.addEventListener("click", () => {
+//   prevSlide();
+//   resetAutoSlide();
+// });
+
+// nextReview.addEventListener("click", () => {
+//   nextSlide();
+//   resetAutoSlide();
+// });
+
+// function startAutoSlide() {
+//   autoSlide = setInterval(nextSlide, 3000);
+// }
+
+// function resetAutoSlide() {
+//   clearInterval(autoSlide);
+//   startAutoSlide();
+// }
+
+// startAutoSlide();

@@ -1,10 +1,17 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-body {
+/* body {
   color: #000;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
+} */
+
+body {
+  background-image: url("/img/back1.jpg"); /* Переконайся, що шлях вірний */
+  background-size: cover; /* Заповнює весь екран */
+  background-position: center; /* Центрує зображення */
+  background-repeat: no-repeat; /* Вимикає повторення */
 }
 
 .container {
@@ -1007,4 +1014,57 @@ picture img {
 
 /*--------------------------------------------Rewiew-----------------------------*/
 
+/* .review-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fdf6e3;
+}
+.review-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.review-slider {
+  position: relative;
+  width: 60%;
+  max-width: 800px;
+  overflow: hidden;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.review-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.review-item {
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  height: auto;
+}
+.review-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.review-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.review-right-btn {
+  position: absolute;
+  right: 0;
+} */
 /*--------------------------------------------------------Arrow---------------------------------------*/
