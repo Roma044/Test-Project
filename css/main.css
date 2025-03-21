@@ -12,6 +12,8 @@ body {
   background-size: cover; /* Заповнює весь екран */
   background-position: center; /* Центрує зображення */
   background-repeat: no-repeat; /* Вимикає повторення */
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
