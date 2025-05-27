@@ -67,7 +67,50 @@
               <p class="third-text">Eng_Dream_School</p> - це школа, народжена з любові та багатьох маленьких кроків до великої та світлої мрії. Ключовим словом в назві є «dream», тобто «мрія».
 Наша школа побудована таким чином, що ваш викладач- це ваш ваш друг. Такий девіз нашої школи, тому що ми переконані, що це 80% успіху.
             </p>
-             <button class="enroll-button" onclick="alert('Ви записалися на курс!')">ЗАПИСАТИСЬ НА ЗАНЯТТЯ</button>
+             <!-- Кнопка -->
+<button class="enroll-button" id="openEnrollModalBtn">ЗАПИСАТИСЬ НА ЗАНЯТТЯ</button>
+
+<!-- Модальне вікно -->
+<div id="modalEnrollForm" class="custom-modal">
+  <div class="custom-modal-content">
+    <span class="custom-close-btn" id="closeEnrollModalBtn">&times;</span>
+
+    <form class="custom-modal-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="custom-form-group">
+        <input type="text" name="Імʼя" placeholder="Імʼя" required />
+        <input type="text" name="Прізвище" placeholder="Прізвище" required />
+      </div>
+    
+      <input type="tel" name="Телефон" placeholder="Номер телефону" required />
+      <input type="email" name="Email" placeholder="Email" required />
+    
+      <!-- ✅ Ось тут ідуть чекбокси -->
+      <p style="margin: 10px 0 5px; font-weight: bold;">Ваш рівень англійської:</p>
+      <div class="custom-radio-group">
+        <label><input type="radio" name="Рівень англійської" value="A1" required> A1</label>
+        <label><input type="radio" name="Рівень англійської" value="A2"> A2</label>
+        <label><input type="radio" name="Рівень англійської" value="B1"> B1</label>
+        <label><input type="radio" name="Рівень англійської" value="B2"> B2</label>
+        <label><input type="radio" name="Рівень англійської" value="C1"> C1</label>
+        <!-- <label><input type="radio" name="Рівень англійської" value="C2"> C2</label> -->
+      </div>
+
+      <!-- Тип заняття: Групове / Парне / Індивідуальне -->
+      <p style="margin: 10px 0 5px; font-weight: bold;">Який вид занять бажаєте:</p>
+<div class="custom-radio-group">
+  <label><input type="radio" name="Тип заняття" value="Групове" required> Групове</label>
+  <label><input type="radio" name="Тип заняття" value="Парне"> Парне</label>
+  <label><input type="radio" name="Тип заняття" value="Індивідуальне"> Індивідуальне</label>
+</div>
+
+    
+      <textarea name="Повідомлення" placeholder="Ваше повідомлення" required></textarea>
+      <button type="submit">Надіслати</button>
+    </form>
+    
+  </div>
+</div>
+
           </div>
           <div class="headder-img" data-aos="fade-left">
             <picture>

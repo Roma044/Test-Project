@@ -100,3 +100,20 @@ document.addEventListener("DOMContentLoaded", function () {
 // }
 
 // startAutoSlide();
+const openModalBtn = document.getElementById("openEnrollModalBtn");
+const closeModalBtn = document.getElementById("closeEnrollModalBtn");
+const modal = document.getElementById("modalEnrollForm");
+
+openModalBtn.addEventListener("click", () => {
+  modal.style.display = "block";
+});
+
+closeModalBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
